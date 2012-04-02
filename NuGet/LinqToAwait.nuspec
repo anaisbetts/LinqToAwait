@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>LinqToAwait/id>
+    <version>0.8.0-beta</version>
+    <authors>Paul Betts</authors>
+    <owners>Paul Betts</owners>
+    <projectUrl>http://xpaulbettsx.github.com/LinqToAwait</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>LINQ operators that work with async/await</description>
+    <copyright>Copyright 2012</copyright>
+    <tags>LINQ Rx await async</tags>
+
+    <dependencies>
+      <dependency id="Rx-Main" version="[2.0.20304-beta]" />
+    </dependencies>
+  </metadata>
+</package>
