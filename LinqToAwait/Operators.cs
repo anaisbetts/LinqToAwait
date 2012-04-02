@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace System.Reactive.Linq.ToAwait
+namespace LinqToAwait
 {
     public static class LinqToAwait
     {

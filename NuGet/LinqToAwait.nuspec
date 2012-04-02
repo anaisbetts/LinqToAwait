@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>LinqToAwait</id>
-    <version>0.8.0-beta</version>
+    <version>0.8.1-beta</version>
     <authors>Paul Betts</authors>
     <owners>Paul Betts</owners>
     <projectUrl>http://xpaulbettsx.github.com/LinqToAwait</projectUrl>
