@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>LinqToAwait/id>
+    <id>LinqToAwait</id>
     <version>0.8.0-beta</version>
     <authors>Paul Betts</authors>
     <owners>Paul Betts</owners>
