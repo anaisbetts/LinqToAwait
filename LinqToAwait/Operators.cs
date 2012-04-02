@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reactive.Linq;
 using System.Reactive.Threading.Tasks;
+using System.Reactive.Concurrency;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace System.Reactive.Linq.ToAwait
 {
@@ -39,11 +41,14 @@ namespace System.Reactive.Linq.ToAwait
                 .Any(x => x != false);
         }
 
-        /*
         public static IObservable<T> AsAsync<T>(this IEnumerable<T> This)
         {
-            return This.ToObservable(TaskScheduler.Current);
+            return This.ToObservable(TaskPoolScheduler.Default);
         }
-        */
+
+        public static IObservable<IList<T>> GetResults<T>(this IObservable<T> This)
+        {
+            return This.ToList();
+        }
     }
 }
