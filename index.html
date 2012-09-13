@@ -1,36 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="LinqToAwait : A Task-based LINQ designed to work with async/await" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>LinqToAwait by xpaulbettsx</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>LinqToAwait</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>LinqToAwait</h1>
+        <p>A Task-based LINQ designed to work with async/await</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/xpaulbettsx/LinqToAwait">Fork Me on GitHub</a>
+        <p class="view"><a href="https://github.com/xpaulbettsx/LinqToAwait">View the Project on GitHub <small>xpaulbettsx/LinqToAwait</small></a></p>
 
-          <h1 id="project_title">LinqToAwait</h1>
-          <h2 id="project_tagline">A Task-based LINQ designed to work with async/await</h2>
 
-          <section id="downloads">
-            <a class="zip_download_link" href="https://github.com/xpaulbettsx/LinqToAwait/zipball/master">Download this project as a .zip file</a>
-            <a class="tar_download_link" href="https://github.com/xpaulbettsx/LinqToAwait/tarball/master">Download this project as a tar.gz file</a>
-          </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+        <ul>
+          <li><a href="https://github.com/xpaulbettsx/LinqToAwait/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/xpaulbettsx/LinqToAwait/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/xpaulbettsx/LinqToAwait">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
         <h2>LinqToAwait</h2>
 
 <p>In a world where many methods return <code>Task&lt;T&gt;</code> or other Awaitable types
@@ -41,9 +38,9 @@ using System.Reactive.Linq;
 using LinqToAwait;
 
 var inputs = new[] { 
-    "<a href="http://www.google.com">http://www.google.com</a>", 
-    "<a href="http://www.yahoo.com">http://www.yahoo.com</a>", 
-    "<a href="http://www.aol.com">http://www.aol.com</a>", 
+    "http://www.google.com", 
+    "http://www.yahoo.com", 
+    "http://www.aol.com", 
 };
 
 IEnumerable&lt;string&gt; results = await inputs.AsAsync()
@@ -57,7 +54,7 @@ IEnumerable&lt;string&gt; results = await inputs.AsAsync()
 
 <h3>Where does this work?</h3>
 
-<p>Currently, you're going to need Visual Studio 11 - you can use LinqToAwait with both C# Metro-based applications, as well as standard .NET 4.5 applications.</p>
+<p>You're going to need Visual Studio 2012 - you can use LinqToAwait with .NET 4.5 applications.</p>
 
 <h3>Hey, isn't this kind of like Rx?</h3>
 
@@ -68,22 +65,17 @@ the particular problem.</p>
 
 <h3>How do I get started?</h3>
 
-<p>It's .NET, how else? <a href="http://nuget.org/packages/linqtoawait">Use NuGet!</a>. There's a trick though: since Rx 2.0 is currently in beta, you need to install the package from the Powershell Console:</p>
+<p>It's .NET, how else? <a href="http://nuget.org/packages/linqtoawait">Use NuGet!</a>.</p>
 
-<pre><code>Install-Package LinqToAwait -pre
+<pre><code>Install-Package LinqToAwait
 </code></pre>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">LinqToAwait &copy; 2011 <a href="https://github.com/xpaulbettsx">xpaulbettsx</a></p>
-        <p>Published using <a href="http://pages.github.com">GitHub Pages</a> with the Slate Theme</p>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/xpaulbettsx">xpaulbettsx</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
     
-
   </body>
 </html>
