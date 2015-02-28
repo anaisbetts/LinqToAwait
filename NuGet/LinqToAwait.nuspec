@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>LinqToAwait</id>
-    <version>0.8.1-beta</version>
+    <version>0.9.1-beta</version>
     <authors>Paul Betts</authors>
     <owners>Paul Betts</owners>
     <projectUrl>http://xpaulbettsx.github.com/LinqToAwait</projectUrl>
@@ -12,7 +12,7 @@
     <tags>LINQ Rx await async</tags>
 
     <dependencies>
-      <dependency id="Rx-Main" version="[2.0.20304-beta]" />
+      <dependency id="Rx-Main" version="[2.2.5]" />
     </dependencies>
   </metadata>
 </package>
